@@ -1,0 +1,71 @@
+/* Set default font sizes and colors */
+body {
+    font-size: 16px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Add padding to the container to prevent content from being too close to the edges */
+.container {
+    padding: 10px;
+}
+
+/* Make the logo and menu responsive */
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 600px) {
+    /* Set font size for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Make the header and content stack on smaller screens */
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-col {
+        display: none;
+    }
+
+    .right-col {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+}
